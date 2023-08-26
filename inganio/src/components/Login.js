@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { login } from '../redux/authActions';
 
 const Login = () => {
-    const loginbtn = {display: "flex", width: "600px", height: "100px", justifyContent: "center", alignItems: "center", backgroundColor: "#FFE812", borderRadius: "20px"};
+    const loginbtn = {display: "flex", width: "600px", height: "100px", justifyContent: "center", alignItems: "center", backgroundColor: "#FFE812", borderRadius: "20px", cursor: "pointer"};
     
     const kakaoClientId = '82751b53fce87ca59f065e047cd49d8d';
     const kakaoOnSuccess = async (data)=>{

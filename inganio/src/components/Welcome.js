@@ -18,7 +18,7 @@ const Welcome = () => {
             <div style={{fontSize: "34px", color: "#9B9B9B", fontWeight: "540"}}>이제 길드원들과 함께할 수 있어요</div>
             <img style={{width: "447px", height: "490px", margin: "10px 0 20px"}} src="nft_art1.png" alt="img"/>
             <Link to={'/guildlist'}>
-                <div style={{width: "660px", height: "120px", fontWeight: "bold",backgroundColor: "red", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "35px", color: "white"}}>길드 가입하러 가기</div>
+                <div style={{width: "660px", height: "120px", fontWeight: "bold",backgroundColor: "red", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "35px", color: "white", cursor: "pointer"}}>길드 가입하러 가기</div>
             </Link>
         </div>
     )

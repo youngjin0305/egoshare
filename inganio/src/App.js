@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Password from "./components/Password";
 import Welcome from "./components/Welcome";
 import GuildList from "./components/GuildList";
+import Guildmembers from "./components/Guildmembers";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/password" element={<Password/>}/>
           <Route path="/welcome" element={<Welcome/>}/>
           <Route path="/guildlist" element={<GuildList/>}/>
+          <Route path="/guild/:guild" element={<Guildmembers/>}/>
         </Routes>
       </Router>
     </div>
