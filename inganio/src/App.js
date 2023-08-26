@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Password from "./components/Password";
 import Welcome from "./components/Welcome";
+import GuildList from "./components/GuildList";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Route path="/" element={<Login />}/>
           <Route path="/password" element={<Password/>}/>
           <Route path="/welcome" element={<Welcome/>}/>
+          <Route path="/guildlist" element={<GuildList/>}/>
         </Routes>
       </Router>
     </div>
