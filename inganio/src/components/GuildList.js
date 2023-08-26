@@ -4,8 +4,9 @@ const GuildList = () => {
     return(
         <div>
             <Header/>
+            
             <div>
-                
+
             </div>
         </div>
     )
