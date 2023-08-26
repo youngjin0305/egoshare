@@ -27,22 +27,22 @@ const Login = () => {
                 <div style={{margin: "0 20px",fontSize: "60px", fontWeight: "bold"}}>Ego Share</div>
             </div>
             <div style={{fontSize: "27px", color: "#9B9B9B", fontWeight: "600"}}>길드 NFT 창조를 통해 길드에 들어갈 수 있어요</div>
-            <div style={{width: "412px", height: "412px", }}/>
-                <KakaoLogin
-                    token={kakaoClientId}
-                    onSuccess={kakaoOnSuccess}
-                    onFailure={kakaoOnFailure}
-                    render={({ onClick }) => (
-                        <div onClick={onClick}>
-                            <div style={loginbtn}>
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M20.0001 1.05804C8.95376 1.05804 4e-05 8.01225 4e-05 16.5891C4e-05 21.9232 3.46316 26.6256 8.73676 29.4225L6.51788 37.5709C6.32184 38.2909 7.14096 38.8648 7.76996 38.4476L17.4964 31.9943C18.3172 32.0739 19.1513 32.1204 20.0001 32.1204C31.0455 32.1204 39.9999 25.1665 39.9999 16.5891C39.9999 8.01225 31.0455 1.05804 20.0001 1.05804Z" fill="black"/>
-                            </svg>
-                            <div style={{fontSize: "30px", fontWeight: "bold", margin: "0 10px"}}>카카오톡 계정 인증</div>
-                            </div>
-                        </div>
-                    )}
-                />
+            <img style={{width: "412px", height: "412px", }} src="nft_collectables 1.png" alt="img"/>
+            <KakaoLogin
+                token={kakaoClientId}
+                onSuccess={kakaoOnSuccess}
+                onFailure={kakaoOnFailure}
+                render={({ onClick }) => (
+                    <div onClick={onClick}>
+                        <div style={loginbtn}>
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" clipRule="evenodd" d="M20.0001 1.05804C8.95376 1.05804 4e-05 8.01225 4e-05 16.5891C4e-05 21.9232 3.46316 26.6256 8.73676 29.4225L6.51788 37.5709C6.32184 38.2909 7.14096 38.8648 7.76996 38.4476L17.4964 31.9943C18.3172 32.0739 19.1513 32.1204 20.0001 32.1204C31.0455 32.1204 39.9999 25.1665 39.9999 16.5891C39.9999 8.01225 31.0455 1.05804 20.0001 1.05804Z" fill="black"/>
+                          </svg>
+                          <div style={{fontSize: "30px", fontWeight: "bold", margin: "0 10px"}}>카카오톡 계정 인증</div>
+                          </div>
+                    </div>
+                )}
+            />
         </div>
     )
 }

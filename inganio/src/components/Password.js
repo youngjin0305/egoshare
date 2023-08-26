@@ -15,7 +15,8 @@ const Password = () => {
             </div>
             <div style={{margin: "10px",fontSize: "30px", fontWeight: "bold"}}>비밀번호 입력</div>
             <div style={{fontSize: "27px", color: "#9B9B9B", fontWeight: "500"}}>Ego Share에서 사용할 비밀번호를 입력하세요.</div>
-            <div style={{display: "flex"}}>
+            <div style={{display: "flex"
+        }}>
 
             </div>
         </div>
