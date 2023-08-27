@@ -1,6 +1,7 @@
 import KakaoLogin from "react-kakao-login";
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/authActions';
+import axios from "axios";
 
 const Login = () => {
     const loginbtn = {display: "flex", width: "600px", height: "100px", justifyContent: "center", alignItems: "center", backgroundColor: "#FFE812", borderRadius: "20px", cursor: "pointer"};
@@ -13,6 +14,8 @@ const Login = () => {
             id: data.profile.id,
             displayName: data.profile.properties.nickname,
         }
+        axios.get("http://localhost:8000/auth", {data: {accessToken:idToken, refreshToken:data.response.refresh_token, profile:data.profile}} , { withCredentials: true })
+        
         dispatch(login(userData));
     };
     const kakaoOnFailure = (error) => {
