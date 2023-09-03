@@ -14,7 +14,7 @@ const Login = () => {
             id: data.profile.id,
             displayName: data.profile.properties.nickname,
         }
-        axios.get("http://localhost:8000/auth", {data: {accessToken:idToken, refreshToken:data.response.refresh_token, profile:data.profile}} , { withCredentials: true })
+        //axios.get("http://localhost:8000/auth", {data: {accessToken:idToken, refreshToken:data.response.refresh_token, profile:data.profile}} , { withCredentials: true })
         
         dispatch(login(userData));
     };
